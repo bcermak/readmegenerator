@@ -78,7 +78,6 @@ const questions =  [
         try {
             inquirer.prompt(questions)
                 .then(function(data) {
-                    console.log(data);
                     writeToFile(data);
                 })
                 .catch(function(error) {

@@ -1,1 +1,1 @@
-Title:  My TitleDescription:  Test, Test, Test, Test.Table:  Installation,Table of Contents,Installation,Usage,License,Contributing,TestsInstallation:  1, 2, 3, 4Usage:  Usage ExampleLicense:  License BContributions:  Brandon and BrandonTests:  N/AQuestions:  No
+Title:  sDescription:  sTable:  Installation:  sUsage:  sLicense:  License AContributions:  sTests:  sQuestions:  s
