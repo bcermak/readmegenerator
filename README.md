@@ -15,6 +15,7 @@ Users create many ReadMe files, therefore, they need a more streamlined way to c
 ## Deployed Application ##
 
 GitHub Repository: https://github.com/bcermak/readmegenerator
+
 Video Demo: https://drive.google.com/file/d/1Nzz8v3agerIo6_Fgj39PgnylWPhBy8lD/view
 
 Step 1 - Answer questions after running 'node index.js':
