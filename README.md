@@ -14,7 +14,7 @@ Users create many ReadMe files, therefore, they need a more streamlined way to c
 
 GitHub Repository: https://github.com/bcermak/readmegenerator
 
-<iframe src="https://drive.google.com/file/d/1Nzz8v3agerIo6_Fgj39PgnylWPhBy8lD/preview" width="640" height="480"></iframe>
+<video src="https://drive.google.com/file/d/1Nzz8v3agerIo6_Fgj39PgnylWPhBy8lD/preview" width="640" height="480"></video>
 
 <p>Project Lead: Brandon Cermak</P>
 
