@@ -1,15 +1,12 @@
 // packages
 const inquirer = require("inquirer");
 const fs = require('fs');
-const util = require('util');
+const generateMarkdown = require("./Develop/utils/generateMarkdown");
 
 
-
-const questions = 
-
-inquirer
-    .prompt([ 
-       {
+// prmompts questions to create ReadMe content
+const questions =  [ 
+      {
         type: "input",
         name: "Title",
         message: "What would you like to use as your ReadMe Title?"
@@ -65,26 +62,32 @@ inquirer
         name: "Questions",
         message: "Do you have any questions?"
       },
-    ]).then(function(responses){
-        console.log(responses)
-    })
+    ];
 
-    // function to write README file
-    function writeToFile(fileName, data) {
-        fs.writeFile(fileName, data, err => {
-            if (err) {
-              return console.log(err);
-            }
-          
-            console.log("Success! Your README.md file has been generated")
-        });
+    // write file named "readmedraft" to differentiate from my own ReadMe
+    function writeToFile(data) {
+        fs.writeFile("ReadMeDraft.md", generateMarkdown(data), function (error) {
+                if (error)
+                    throw (error);
+            })
+        console.log("success")
     }
     
-
-// function to initialize program
-function init() {
-
-}
-
-// function call to initialize program
+    // function to initialize program
+    function init() {
+        try {
+            inquirer.prompt(questions)
+                .then(function(data) {
+                    console.log(data);
+                    writeToFile(data);
+                })
+                .catch(function(error) {
+                    console.log("Error Caught: " + error);
+                })
+        } catch (error2) {
+            console.log("Error Caught: " + error2);
+        }
+    }
+    
+// initialize cont'd
 init();
